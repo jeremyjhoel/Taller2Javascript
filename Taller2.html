@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Taller1.css">
+    <title class="texto_blanco">Taller2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#primero">Calculadora básica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#segundo">Adivinanza</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tercero">Lotería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cuarto">Lista de tareas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#quinto">Calculador de dígito verificador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="padding-top: 60px">
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Inicio:</h1>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center texto_blanco">Nuestro equipo:</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-12 col-12 text-center">
+                <img src="data:image/png;base64,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" class="img-fluid">
+            </div>
+    
+            <div class="col-md-12 col-12">
+                <h3 class="text-center texto_blanco">Jeremy Sepúlveda</h3>
+                <p class="text-center texto_blanco">Estudiante de Ingeniería Civil en Bioinformática en la Universidad de Talca</p>
+            </div>
+        </div>
+        <br>
+    
+        <div class="row" id="primero" style="padding-top: 70px">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Calculadora básica:</h1>
+            </div>
+            
+            <div class="col-md-12 text-center">
+                <form>
+                    <label for="Numero1">Numero 1:</label>
+                    <input type="text" id="Numero1">
+                </form>
+            </div>
+            <div class="col-md-12 text-center">
+                <form>
+                    <label for="Operacion">Operación:</label>
+                    <input type="text" id="Operacion">
+                </form>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <form>
+                    <label for="Numero2">Numero 2:</label>
+                    <input type="text" id="Numero2">
+                </form>
+            </div>
+            
+            <div class="col-md-12 text-center">
+                <form>
+                    <button id="boton1">Enviar</button>
+                    <button id="boton2">Limpiar</button>
+                </form>
+            </div>
+                
+        </div>
+
+        <div class="row" id="segundo" style="padding-top: 70px">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Adivinanza:</h1>
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="adivinar">Apuesta:</label>
+                <input type="text" id="adivinar">
+            </div>
+            <div class="col-md-12 text-center">
+                <button id="boton3">Comenzar</button>
+            </div>
+            <div class="col-md-6 col-12"></div>                
+        </div>
+
+        <div class="row" id="tercero" style="padding-top: 70px">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Lotería:</h1>
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria1">Primer número:</label>
+                <input type="text" id="loteria1">
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria2">Segundo número:</label>
+                <input type="text" id="loteria2">
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria3">Tercer número:</label>
+                <input type="text" id="loteria3">
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria4">Cuarto número:</label>
+                <input type="text" id="loteria4">
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria5">Quinto número:</label>
+                <input type="text" id="loteria5">
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="loteria6">Sexto número:</label>
+                <input type="text" id="loteria6">
+            </div>
+            <div class="col-md-12 text-center">
+                <button id="boton4">Revisar</button>
+            </div>                
+        </div>
+
+        <div class="row" id="cuarto" style="padding-top: 70px">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Lista de tareas:</h1>
+            </div>
+            <div class="col-md12 text-center">
+                <ul id="lista-tareas">Lista de Tareas</ul>
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="Nuevatarea">Nueva tarea:</label>
+                <input type="text" id="Nuevatarea">
+                <button id="boton5">Agregar</button>
+            </div>                
+        </div>
+
+        <div class="row" id="quinto" style="padding-top: 70px">
+            <div class="col-12">
+                <h1 class="text-center texto_blanco">Calculador de dígito verificador:</h1>
+            </div>
+            <div class="col-md-12 text-center">
+                <label for="rut">Rut sin dígito verificador:</label>
+                <input type="text" id="rut">
+                <button id="boton6">Calcular</button>
+            </div>
+            <div class="col-md-6 col-12"></div>                
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <div class="container">
+            <p class="texto_blanco">2023 &copy; - Universidad de Talca</p>
+        </div>
+</footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Taller2.js"></script>
+</body>
+
+</html>
