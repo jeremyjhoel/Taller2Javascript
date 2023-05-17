@@ -120,7 +120,7 @@ function agregarTarea() {
   
   // Crear un nuevo elemento li para la tarea
   var li = document.createElement("li");
-  
+
   // Agregar el texto de la tarea al li
   li.appendChild(document.createTextNode(nuevaTarea));
   
@@ -132,6 +132,8 @@ function agregarTarea() {
   
   // Agregar un botón para eliminar la tarea
   var botonEliminar = document.createElement("button");
+  botonEliminar.classList.add('btn', 'btn-primary');
+  botonEliminar.style.marginLeft = "10px"
   botonEliminar.innerHTML = "Eliminar"; // Se utiliza para agregar el string "Eliminar" al botón.
   botonEliminar.onclick = function() { // Se utiliza para usar la función cuando se llame al botón 
     eliminarTarea(this); // Se le entrega la tarea a eliminar 
